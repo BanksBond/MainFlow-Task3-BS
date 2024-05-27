@@ -57,6 +57,15 @@ body{
     bottom: 2em;
 }
 
+.carousel{
+  width: 100%;
+}
+
+.carousel-item img{
+  object-fit:cover;
+  min-width:100 !important;
+}
+
 
 .dropdown-menu,
 .dropdown-submenu {
