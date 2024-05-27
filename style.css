@@ -66,6 +66,42 @@ body{
   min-width:100 !important;
 }
 
+.carousel-item { 
+    
+  /* Other Properties */
+  transition: transform 0.8s ease-in-out; 
+}
+
+.carousel-inner .carousel-item > img {
+  -webkit-animation: thing 20s;
+  -o-animation: thing 20s;
+  animation: thing 20s; 
+}
+@keyframes thing {
+  from {
+     transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+.carousel-inner .carousel-item > .carousel-caption {
+  -webkit-animation: that 20s;
+  -o-animation: that 20s;
+  animation: that 20s; 
+}
+@keyframes that {
+  from {
+     /* transform: scale(1, 1); */
+     transform: translate(0, 0);
+  }
+  to {
+    /* transform: scale(1.5, 1.5); */
+    transform: translate(0, -10rem);
+  }
+}
+
 
 .dropdown-menu,
 .dropdown-submenu {
